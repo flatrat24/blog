@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="title">
+  blog
+</h1>
+<p><a href="{{ get_url(path='@/blog/_index.md') }}">Posts</a></p>
+<p><a href="{{ get_url(path='@/gyro/_index.md') }}">Gyro</a></p>
+{% endblock content %}
