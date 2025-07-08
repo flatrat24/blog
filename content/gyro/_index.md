@@ -3,7 +3,7 @@ title = "Project Gyro"
 description = "A physical implementation of vehicles moving through a traffic signal-governed intersection"
 sort_by = "date"
 template = "blog.html"
-page_template = "blog-page.html"
+page_template = "page.html"
 +++
 # Overview
 The goal of this project is to create a physical representation of an traffic intersection. The initial general specifications are:
