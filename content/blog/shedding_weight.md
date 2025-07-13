@@ -1,6 +1,7 @@
 +++
 title = "Shedding Weight"
 date = 2025-06-08
+description = "Perspective on managing growing responsibility"
 +++
 
 # Busy or Chaotic?
