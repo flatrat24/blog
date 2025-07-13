@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="journal-index">
+  {% for page in section.pages %}
+  <div class="journal-entry">
+    <p>
+      {{ page.content | safe}}
+    </p>
+    <div class="journal-metadata">
+      {% if page.date %}
+        <span class="journal-date">
+          {{ page.date | date(format="%B %-d, %Y") }}
+        </span>
+      {% endif %}
+      {% if page.extra.song_title %}
+        <span>
+          <a href="{{page.extra.song_url}}" class="journal-song">
+            {{page.extra.song_title}}
+          </a>
+        </span>
+      {% endif %}
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% endblock content %}
