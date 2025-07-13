@@ -1,6 +1,5 @@
 @import "fonts";
 
-/* Color Theme Swatches in Hex */
 $bl: #034159;
 $gr: #71733C;
 $ye: #F2D785;
@@ -11,7 +10,7 @@ $fg: #000000;
 body {
   height: 100%;
   min-height: 100%;
-  max-width: 40rem;
+  max-width: 45rem;
 
   font-family: "Cormorant";
   font-size: 1.1em;
@@ -27,85 +26,108 @@ body {
   overflow-wrap: break-word;
 }
 
-.post-meta {
-  text-align: right;
+/************************ PAGE CSS ************************/
+.page-header {
+  margin-top: 1em;
 }
 
-h2, h3, h4, h5, h6 {
-  margin-top: 3rem;
-  color: $bl;
+.page-title {
+  float: left;
+  font-size: 2em;
+  font-weight: 700;
 }
 
-h1::before {
-  color: $bl;
-  content: "# ";
+.page-date {
+  float: right;
+  font-size: 1em;
+  font-weight: 700;
 }
 
-hr { margin: 2rem 0; }
-
-p { margin: 1rem 0; }
-
-li { margin: 0.4rem 0; }
-
-*:target { background: yellow; }
-
-.w {
-  max-width: 640px;
-  margin: 0 auto;
-  padding: 4rem 2rem;
-}
-
-hr {
-  text-align: center;
-  border: 0;
-
-  &:before { content: '/////' }
-  &:after { content: attr(data-content) '/////' }
-}
-
-table { width: 100%; }
-
-table, th, td {
-  border: thin solid $fg;
-  border-collapse: collapse;
-  padding: 0.4rem;
-}
-
-code {
-  color: white;
-  background: $fg;
-}
-
-pre code {
-  display: block;
-  overflow-x: auto;
-  white-space: pre-wrap;
-  padding: 1rem;
-}
-
-blockquote {
+.page-description {
+  clear: both;
+  margin-top: 0.75em;
   font-style: italic;
-  border: thin solid $fg;
-  padding: 1rem;
-
-  p { margin: 0; }
+  font-size: 1em;
 }
 
-img {
-  max-width: 100%;
-  display: block;
-  margin: 0 auto;
+.page-body {
+  clear: both;
+  margin-top: 1.5em;
+  line-height: 1.6;
 }
 
-.footnote-definition {
-  padding: 0 1rem;
-  &:target {
-    background: yellow;
-    color: #212121;
-  }
-  p {
-    display: inline;
-  }
+/*********************** HEADER CSS ***********************/
+
+.site-header {
+  font-size: 1em;
+  text-align: center;
+  text-decoration: none;
 }
 
-nav, .taxonomies { text-align: center; }
+.site-header nav a {
+  color: $fg;
+  font-weight: 700;
+  text-decoration: none;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+/*********************** BLOG INDEX ***********************/
+
+.blog-index {
+  width: 95%;
+  margin: auto;
+}
+.blog-index a {
+  display: flex;
+  color: $fg;
+  text-decoration: none;
+}
+
+.blog-index-date {
+  flex-grow: 1;
+  text-align: right;
+  display: flex;
+  align-items: center;
+}
+
+.blog-index-date::before {
+  content: '';
+  border-bottom: 0.1em dotted rgba($fg, 0.25);
+  flex: 1;
+  margin: 0 1em;
+}
+
+/************************ JOURNAL *************************/
+
+.journal-entry {
+  margin-top: 5em;
+  margin-bottom: 5em;
+}
+
+.journal-metadata {
+  width: fit-content;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.journal-metadata {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+.journal-metadata > *:not(:first-child)::before {
+  content: "|";
+  margin-right: 0.75em;
+  padding: 0;
+}
+
+.journal-metadata * {
+  margin: auto;
+  font-size: 0.85em;
+  font-weight: 700;
+  color: rgba($fg, 0.5);
+  text-decoration: none;
+}
