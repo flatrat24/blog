@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="blog-index">
+  {% for subproject in section.subsections %}
+    <div>
+      {% set sp = get_section(path=subproject) %}
+      <li>
+        <a href="{{ sp.permalink }}">{{ sp.title }}</a>
+      </li>
+    </div>
+  {% endfor %}
+</div>
+{% endblock content %}
