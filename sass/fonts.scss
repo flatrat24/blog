@@ -29,3 +29,11 @@
   src: url("fonts/cormorant/Cormorant-BoldItalic.ttf"), local("ttf");
   font-display: swap;
 }
+
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("fonts/ibm-plex/IBMPlexSans-Bold.ttf"), local("ttf");
+  font-display: swap;
+}
