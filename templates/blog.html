@@ -1,15 +1,12 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1 class="title">
-  {{ section.title }}
-</h1>
-{{ section.content | safe }}
-<ul>
-  <!-- If you are using pagination, section.pages will be empty.
-       You need to use the paginator object -->  
+<div class="blog-index">
   {% for page in section.pages %}
-  <li><a href="{{ page.permalink | safe }}">{{ page.title }}</a></li>
+  <a href="{{ page.permalink | safe }}">
+    <span class="blog-index-title">{{ page.title }}</span>
+    <span class="blog-index-date">{{ page.date | date(format="%B %-d, %Y") }}</span>
+  </a>
   {% endfor %}
-</ul>
+</div>
 {% endblock content %}

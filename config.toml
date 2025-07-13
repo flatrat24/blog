@@ -1,4 +1,6 @@
 # The URL the site will be built for
+# The URL the site will be built for
+# The URL the site will be built for
 base_url = "https://example.com"
 
 # Whether to automatically compile all Sass files in the sass directory
@@ -13,4 +15,11 @@ build_search_index = false
 highlight_code = false
 
 [extra]
-# Put all your custom variables here
+homepage_image = "images/home.jpg"
+header_nav = [
+  { name = "home", url = "/" },
+  { name = "projects", url = "/projects" },
+  { name = "journal", url = "/journal" },
+  { name = "blog", url = "/blog" },
+  # { name = "/tags", url = "/tags" },
+]

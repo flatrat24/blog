@@ -1,12 +1,25 @@
 {% extends "base.html" %}
 
-<h1 class="title">
-  {{ page.title }}
-</h1>
-<p class="subtitle">{% if page.date %}{{ page.date | date(format="%-d %B, %Y") }}{% endif %}</p>
-
 {% block content %}
+  <main>
+    <article>
+      <div class="page-header">
+        <span class="page-title">
+          {{ page.title }}
+        </span>
+        <span class="page-date">
+          {% if page.date %}{{ page.date | date(format="%B %-d, %Y") }}{% endif %}
+        </span>
+        {% if page.description %}
+          <p class="page-description">
+            {{ page.description }}
+          </p>
+        {% endif %}
+      </div>
 
-{{ page.content | safe }}
-
+      <div class="page-body">
+        {{ page.content | safe }}
+      </div>
+    </article>
+  </main>
 {% endblock content %}

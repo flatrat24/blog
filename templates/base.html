@@ -9,6 +9,14 @@
   </head>
 
   <body>
+    <header class="site-header">
+      <nav>
+        {% for nav_item in config.extra.header_nav %}
+          <a href="{{ nav_item.url | safe }}" {% if nav_item.new_tab %}target="_blank" rel="noreferrer noopener"{% endif %}>{{ nav_item.name }}</a>
+        {% endfor %}
+      </nav>
+    </header>
+    <hr>
     <section class="section">
       <div class="container">
         {% block content %} {% endblock content %}
