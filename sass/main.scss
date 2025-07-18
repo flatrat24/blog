@@ -1,4 +1,4 @@
-@import "fonts";
+@import "fonts/fonts";
 
 $bl: #034159;
 $gr: #71733C;
@@ -10,7 +10,7 @@ $fg: #000000;
 body {
   height: 100%;
   min-height: 100%;
-  max-width: 45rem;
+  max-width: 45em;
 
   font-family: "Cormorant";
   font-size: 1.1em;
@@ -18,7 +18,7 @@ body {
 
   margin: auto;
 
-  padding: 2rem;
+  padding: 2em;
 
   background: $bg;
   color: $fg;
@@ -130,4 +130,32 @@ body {
   font-weight: 700;
   color: rgba($fg, 0.5);
   text-decoration: none;
+}
+
+/************************ TABLES **************************/
+table {
+  border-radius: 0.5em;
+  font-family: "IBM Plex Mono";
+	border-collapse: collapse;
+  text-align: left;
+  margin: 1em auto;
+	min-width: 40%;
+	max-width: 95%;
+	overflow: hidden;
+
+	tr {
+		&:nth-child(even) {
+      background-color: rgba($gr, 0.05);
+		}
+
+		th,
+		td {
+			padding: 0.25em 0.75em;
+		}
+
+		th {
+      background-color: rgba($gr, 0.15);
+			font-weight: bold;
+		}
+	}
 }
