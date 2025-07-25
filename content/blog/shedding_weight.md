@@ -4,7 +4,7 @@ date = 2025-06-08
 description = "Perspective on managing growing responsibility"
 +++
 
-# Busy or Chaotic?
+## Busy or Chaotic?
 
 It's no secret. College students live some of the most fast-paced lives out there. Lecture at 8:00am, internship interview at 10:00, lab at 11:00 with just enough time after to squeeze in a couple minutes for a quick lunch right before two more lectures, dinner, and finally a couple homework assignments to get you in the headspace to fall asleep and repeat it all over again. This rushed lifestyle is certainly not sustainable; running from commitment to commitment all day long will erode at anyone's ability to maintain all these commitments.
 

@@ -1,80 +1,80 @@
 +++
-title = "Markdown Test"
+title = "Markdown Showcase"
 date = "2025-07-07"
 updated = "2025-07-07"
+description = "A comprehensive display of how my website renders commonmark"
 +++
+## Markdown
 
-# H1
+Text can be **bold**, *italic*, ~~strikethrough~~, and ***~~all at the same time~~***.
 
-## H2
+[Link to another page](@/blog/shedding_weight.md).
 
-### H3
+There should be whitespace between paragraphs[^1].
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquet sagittis id consectetur purus ut. In pellentesque massa placerat duis ultricies. Neque laoreet suspendisse interdum consectetur libero id. Justo nec ultrices dui sapien eget mi proin. Nunc consequat interdum varius sit amet mattis vulputate. Sollicitudin tempor id eu nisl nunc mi ipsum. Non odio euismod lacinia at quis. Sit amet nisl suscipit adipiscing. Amet mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan. Sit amet consectetur adipiscing elit pellentesque habitant. Ac placerat vestibulum lectus mauris. Molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed. [Google](https://www.google.com)
+# Heading 1
+## Heading 2
+### Heading 3
+#### Heading 4
+##### Heading 5
+###### Heading 6
 
-![Markdown Logo](https://markdown-here.com/img/icon256.png)
+This is a normal paragraph[^2] following a header.
 
-## Code Block
+😭😂🥺🤣❤️✨🙏😍🥰😊
+
+```
+Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
+```
+
+> "Original content is original only for a few seconds before getting old"
+> > Rule #21 of the internet
+
+- Item 1
+- Item 2
+  - Item 2.1
+  - Item 2.2
+- Item 3
+- `Item 4`
+
+1. Perform step #1
+2. Proceed to step #2
+3. Conclude with step #3
+
+- [ ] Milk
+- [x] Eggs
+- [x] Flour
+- [ ] Coffee
+- [x] Combustible lemons
+
+[![Male mallard duck](https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Male_mallard_duck_2.jpg/800px-Male_mallard_duck_2.jpg)](https://upload.wikimedia.org/wikipedia/commons/2/24/Male_mallard_duck_2.jpg)
+
+| Mare         | Rating            | Additional info  |
+| :----------- | :---------------- | :--------------- |
+| Fluttershy   | Best pone         | Shy and adorable |
+| Apple Jack   | Good pone         | Honest and nice  |
+| Pinkie Pie   | Fun pone          | Parties and ADHD |
+| Twilight     | Main pone         | Neeerd           |
+| Rainbow Dash | Yes               | Looks badass     |
+| Rarity       | Fancy pone        | Generous         |
+| Derpy Hooves | *M u f f i n s*   | [REDACTED]       |
 
 ```rust
-fn main() {
-    println!("Hello World");
+let highlight = true;
+```
+
+```scss, linenos, linenostart=10, hl_lines=3-4 8-9, hide_lines=2 7
+pre mark {
+  // If you want your highlights to take the full width
+  display: block;
+  color: currentcolor;
+}
+pre table td:nth-of-type(1) {
+  // Select a colour matching your theme
+  color: #6b6b6b;
+  font-style: italic;
 }
 ```
 
-```rust,hl_lines=2,linenos
-fn main() {
-    println!("Hello World");
-}
-```
-
-## Ordered List
-
-1. First item
-2. Second item
-3. Third item
-
-## Unordered List
-
-- List item
-- Another item
-- And another item
-
-## Nested list
-
-- Fruit
-  - Apple
-  - Orange
-  - Banana
-- Dairy
-  - Milk
-  - Cheese
-
-## Quote
-
-> Two things are infinite: the universe and human stupidity; and I'm not sure about the
-> universe.<br>
-> — <cite>Albert Einstein</cite>
-
-## Table Inline Markdown
-
-| Italics   | Bold     | Code   | StrikeThrough     |
-| --------- | -------- | ------ | ----------------- |
-| _italics_ | **bold** | `code` | ~~strikethrough~~ |
-
-## Foldable Text
-
-<details>
-    <summary>Title 1</summary>
-    <p>IT'S A SECRET TO EVERYBODY.</p>
-</details>
-
-<details>
-    <summary>Title 2</summary>
-    <p>Stay awhile, and listen!</p>
-</details>
-
-## Code tags
-
-Lorem ipsum `dolor` sit amet, `consectetur adipiscing` elit.
-`Lorem ipsum dolor sit amet, consectetur adipiscing elit.`
+[^1]: Footnote
+[^2]: [Footnote (link)](https://example.org)
