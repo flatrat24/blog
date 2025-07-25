@@ -8,8 +8,7 @@ page_template = "page.html"
 ## Overview
 The goal of this project is to create a physical representation of an traffic intersection. The initial general specifications are:
 
-* The intersection should be a four-way
-* Each of the four roads are two-way, two-lane roads. That is, there are two lanes to each road, with one lane moving in each direction
+* The intersection should be a four-way: two roads with two lanes each
 * The intersection should be governed by a four-way traffic signal
 * Only the three basic lights (red, yellow, green) are used. No special lights should be considered (protected turn, flashing red, etc.)
 * The traffic signal should respond to traffic in some capacity
@@ -23,6 +22,9 @@ Before continuing, I should clarify the terminology I'll be using throughout thi
 
 * **Traffic Signal:** A trio of red, yellow, and green lights all facing the same singular direction
 * **Traffic Totem:** Four traffic signals housed inside a single enclosure with each signal facing one of four perpendicular directions
+* **Lane:** A single path for vehicles to travel along in single file with a uniform direction throughout
+* **Road:** A set of parallel lanes directly adjacent to each other, but no necessarily with a uniform direction.
+* **Active/Sleeping/Dead Road:** An active road is one that 1) has vehicles on it, and 2) has a green light. A sleeping road is one that only fulfills has vehicles but no green light. A dead road is one without vehicles regardless of the color of the light.
 
 ## Project Structure
 
