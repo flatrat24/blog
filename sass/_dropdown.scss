@@ -1,0 +1,13 @@
+@import "colors";
+
+details {
+  border-radius: 2px;
+  background: $darkBackground;
+}
+
+details > summary {
+  padding: 4px;
+  cursor: pointer;
+  background: rgba($bl, 0.5);
+  font-weight: 700;
+}

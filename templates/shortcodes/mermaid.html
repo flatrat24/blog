@@ -2,7 +2,9 @@
   <pre class="mermaid">
     {{ body | safe }}
   </pre>
+  {% if label %} 
   <p>
-    {% if label %} {{label}} {% endif %}
+    {{label}}
   </p>
+  {% endif %}
 </div>

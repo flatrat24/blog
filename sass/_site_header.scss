@@ -1,0 +1,15 @@
+@import "colors";
+
+.site-header {
+  font-size: 1.25em;
+  text-align: center;
+  text-decoration: none;
+}
+
+.site-header nav a {
+  color: $fg;
+  font-weight: 700;
+  text-decoration: none;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}

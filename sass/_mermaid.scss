@@ -1,0 +1,88 @@
+@import "colors";
+
+.mermaid-container {
+  background: $darkBackground !important;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  width: 100vw;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  padding: 1rem 0;
+  overflow-x: auto;
+
+  p {
+    text-align: center;
+    margin: auto;
+  }
+
+  .mermaid {
+    display: block;
+    width: 100%;
+    margin: auto;
+    overflow: visible;
+    max-width: 80em;
+  }
+
+  svg {
+    max-width: 90% !important;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  svg [class*="edge"] {
+    fill: none !important;
+    stroke: rgba($fg, 0.75) !important;
+  }
+
+  svg {
+    rect,
+    .rect,
+    .box,
+    .task,
+    .actor {
+      fill: rgba($bl, 0.50) !important;
+      stroke: rgba($bl, 1.00) !important;
+    }
+
+    // Angular shapes (hexagons, rhomboids, cylinders, diamonds)
+    .hexagon,
+    .rhombus,
+    .cylinder,
+    polygon:not([rx]), // some diamonds and polygons
+    path.hex,
+    path.rhombus {
+      fill: rgba($re, 0.50) !important;
+      stroke: rgba($re, 1.00) !important;
+    }
+
+    // Round shapes (circles, ellipses, start/end states)
+    circle,
+    ellipse,
+    .start-state,
+    .end-state,
+    .circle {
+      fill: rgba($gr, 0.50) !important;
+      stroke: rgba($gr, 1.00) !important;
+    }
+
+    .label,
+    .messageText {
+      fill: #1f2937 !important; // slate-800
+      font-family: var(--font-mono, monospace);
+      font-size: 0.9rem;
+      font-weight: 400;
+    }
+
+    .edgeLabel {
+      padding: 0.15em;
+      background: $darkBackground !important;
+      color: $fg !important;
+      font-family: "IBM Plex Mono";
+      font-size: 0.9rem;
+      font-weight: 700;
+    }
+  }
+}

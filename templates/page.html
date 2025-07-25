@@ -10,12 +10,12 @@
         <span class="page-date">
           {% if page.date %}{{ page.date | date(format="%B %-d, %Y") }}{% endif %}
         </span>
-        {% if page.description %}
-          <p class="page-description">
-            {{ page.description }}
-          </p>
-        {% endif %}
       </div>
+      {% if page.description %}
+        <div class="page-description">
+          {{ page.description }}
+        </div>
+      {% endif %}
 
       <div class="page-body">
         {{ page.content | safe }}
